@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    List of movies - Angular
+  </h1>
+</div>
+<ul>
+  <li *ngFor="let movie of movies | async">
+    {{movie.node.title}} ({{movie.node.year}})
+  </li>
+</ul>
+
